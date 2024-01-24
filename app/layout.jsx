@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import Header from "@components/Header";
 import Providers from "@redux/Provider";
 import Copyright from "@components/Copyright";
@@ -18,9 +17,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="google-site-verification" content="rpJz9jX03IT5mPTa3VdCmyPryMgs0BnwVVQCgxG_xjk" />
-      </Head>
       <body className="bg-blue-500 text-white text-lg" >
         <Providers>
           <Header/>

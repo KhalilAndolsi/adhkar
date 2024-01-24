@@ -11,6 +11,7 @@ config.autoAddCss = false;
 export const metadata = {
   title: "Adhkar",
   description: "{description: Adhkar & created by |Khalil Andolsi| using 'NEXT JS'♥};",
+  keywords: ["adhkar", "اذكار", "اسلام", "اذكار الصباح", "دعاء"],
 };
 
 export default function RootLayout({ children }) {

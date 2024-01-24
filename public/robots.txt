@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://adhkar.vercel.app
-
-# Sitemaps
-Sitemap: https://adhkar.vercel.app/sitemap.xml

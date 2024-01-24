@@ -1,12 +1,11 @@
 import axios from "axios";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 
 // Components
 import Error from "@components/Error";
 import AudioPlayerBtn from "@components/AudioPlayerBtn";
 import AudioPlayer from "@components/AudioPlayer";
+import DhikerLink from "@components/DhikerLink";
 
 export default async function Home() {
   try {
@@ -22,9 +21,7 @@ export default async function Home() {
             <div key={i} className="main-dhiker">
               <AudioPlayerBtn audio={item.AUDIO_URL} />
               <h3>{item.TITLE}</h3>
-              <Link href={`/dhiker/${item.TITLE.replaceAll(" ", "-")}/${item.ID}`}>
-                <FontAwesomeIcon icon={faCircleArrowRight} />
-              </Link>
+              <DhikerLink title={item.TITLE} id={item.ID} />
             </div>
           ))}
         </section>

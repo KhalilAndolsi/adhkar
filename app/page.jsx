@@ -4,7 +4,6 @@ import axios from "axios";
 // Components
 import Error from "@components/Error";
 import AudioPlayerBtn from "@components/AudioPlayerBtn";
-import AudioPlayer from "@components/AudioPlayer";
 import DhikerLink from "@components/DhikerLink";
 
 export default async function Home() {
@@ -15,7 +14,6 @@ export default async function Home() {
     const data = response.data.العربية;
     return (
       <>
-        <AudioPlayer />
         <section className="home-page">
           {data.map((item, i) => (
             <div key={i} className="main-dhiker">

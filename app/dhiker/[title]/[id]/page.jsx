@@ -1,7 +1,6 @@
 import axios from "axios";
 import Error from "@components/Error";
 import AudioPlayerBtn from "@components/AudioPlayerBtn";
-import AudioPlayer from "@components/AudioPlayer";
 
 async function dhikerById({ params: { id } }) {
   try {
@@ -12,7 +11,6 @@ async function dhikerById({ params: { id } }) {
     const data = response.data[firstKey];
     return (
       <>
-        <AudioPlayer/>
         <section className="adhkar">
           {data ? (
             data.map((item, i) => (

@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@components/Header";
 import Providers from "@redux/Provider";
 import Copyright from "@components/Copyright";
+import AudioPlayer from "@components/AudioPlayer";
 
 // Fontawesome
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-blue-500 text-white text-lg" >
         <Providers>
+          <AudioPlayer />
           <Header/>
           {children}
         </Providers>

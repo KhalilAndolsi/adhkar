@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.main-header {
+  @apply flex text-3xl justify-center items-center p-3 bg-blue-500 text-white font-bold gap-3
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.home-page {
+  @apply container mb-5 mx-auto px-4 grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.main-dhiker {
+  @apply bg-white text-zinc-800 p-3 rounded-md text-center flex flex-nowrap justify-between items-center gap-2 font-semibold
+}
+.main-dhiker svg {
+  @apply text-2xl hover:text-blue-400 transition-all
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.fetch-msg {
+  @apply text-center text-3xl font-semibold my-48
+}
+
+.dhiker-title {
+  @apply text-center font-semibold bg-white text-zinc-800 p-2 m-3 rounded-md
+}
+
+.adhkar {
+  @apply flex flex-col flex-nowrap gap-3 p-3
+}
+
+.adhkar div {
+  @apply bg-white text-zinc-800 p-2 rounded-md text-center h-fit flex justify-between flex-row-reverse
+}
+.adhkar div button svg {
+  @apply text-3xl hover:text-blue-400 transition-all
 }

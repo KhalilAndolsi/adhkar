@@ -1,0 +1,2 @@
+https://adhkar.vercel.app/
+https://adhkar.vercel.app/:title/:id
